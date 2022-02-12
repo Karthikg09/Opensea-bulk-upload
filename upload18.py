@@ -398,7 +398,7 @@ def main_program_loop():
             wait_css_selector("button[type='submit']")
             listing = driver.find_element_by_css_selector("button[type='submit']")
             driver.execute_script("arguments[0].click();", listing)
-            time.sleep(10)
+            time.sleep(7)
             
             if is_polygon.get():
                 driver.find_element_by_xpath('//button[text()="Sign"]').click()
